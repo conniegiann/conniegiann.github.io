@@ -36,6 +36,7 @@ body {
 
 #section0 {
     background-color: #F64747;
+    --background-color: #F62459;
 }
 
 #section1 {
@@ -124,6 +125,10 @@ body {
     font-size: 36px;
     font-weight: 200;
     color: #ECECEC;
+}
+
+.contact-me a:hover {
+  color: #F1A9A0;
 }
 
 /* Buttons */
