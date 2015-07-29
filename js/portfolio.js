@@ -1,3 +1,5 @@
+var hello = 'Hi, my name is Connie.'
+
 $(document).ready(function() {
     $('#fullpage').fullpage({
         autoScrolling: false
@@ -17,6 +19,24 @@ $(document).ready(function() {
             }
         });
     });    
+
+    $(function() {
+        var chars = 1,
+            len = hello.length;
+
+        var typewriter = window.setInterval(function() {
+            $('#typewriter').text(hello.slice(0, chars));
+            chars++;
+
+            if (chars > len + 1) {
+                clearInterval(typewriter);
+            }
+        }, 120);
+
+    //    $('#typewriter').text(hello);
+        
+
+    });
 
 });
 

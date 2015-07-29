@@ -40,19 +40,23 @@ body {
 }
 
 #section1 {
-    background-color: #ECECEC;
+    background-color: #F2F1EF;
 }
 
 #section2 {
-    background-color: #ECECEC;
+    background-color: #F2F1EF;
+}
+
+#section2.2 {
+    background-color: #F2F1EF;
 }
 
 #section3 {
-    background-color: #ECECEC;
+    background-color: #F2F1EF;
 }
 
 #section4 {
-    background-color: #ECECEC;
+    background-color: #F2F1EF;
 }
 
 #section5 {
@@ -61,6 +65,22 @@ body {
 
 #section6 {
     background-color: #F64747;
+}
+
+.typewriter
+{
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50, end);
+    animation: type 2s steps(60, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@-webkit-keyframes type{
+    from { width: 0; }
 }
 
 .intro {
@@ -127,8 +147,12 @@ body {
     color: #ECECEC;
 }
 
+
 .contact-me a:hover {
   color: #F1A9A0;
+  opacity: 0.3;
+  transition: opacity 0.5s linear;
+  animation-play-state: running;
 }
 
 /* Buttons */
